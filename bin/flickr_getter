@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'flickr_api'
+
+puts 'Please enter file name for collage'
+filename = STDIN.readline.gsub(/\W+/, '').gsub(/\A_+/, '')
+puts FlickrApi.fetch_photos(filename || "collage_#{Time.zone.now.to_i}", *ARGV)
