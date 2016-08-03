@@ -4,6 +4,8 @@ Specs running:
 
 Starting application from console:
 
+**bundle install**
+
 **./bin/flickr_getter first_word second_word ...**
 
 After this application will ask you target file name for collage.
